@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Drone Farm Game</title>
+
+    <link rel="stylesheet" href="jogo.css">
+
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <!-- HUD -->
+
+        <div class="hud">
+
+            <h1>DRONE FARM GAME</h1>
+
+            <div class="info">
+
+                <p>Produto: <span id="fuel">0</span>%</p>
+
+                <p>Frutas: <span id="fruitCount">0</span>/8</p>
+
+            </div>
+
+        </div>
+
+        <!-- MISSÃO -->
+
+        <div id="messageBox">
+
+            Vá até o depósito amarelo chamado PRODUTO e abasteça o drone até 100%.
+
+        </div>
+
+        <!-- ÁREA -->
+
+        <div id="gameArea">
+
+            <!-- DRONE -->
+
+            <div id="drone">
+                <img src="drone.png" />
+            </div>
+
+            <!-- PRODUTO -->
+
+            <div id="fuelZone">
+
+                <span>PRODUTO</span>
+
+            </div>
+
+            <!-- CAMINHÃO -->
+
+            <div id="truck">
+
+                🚚
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="jogo.js"></script>
+
+</body>
+
+</html>

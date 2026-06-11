@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -10,7 +9,9 @@
 
     <title>Drones na Agricultura</title>
 
-    <link rel="icon" href="favicon.png?v=1">
+    <link rel="icon" href="./logo.png">
+    <link rel="shortcut icon" href="./logo.png">
+    <link rel="apple-touch-icon" href="./logo.png">
 
     <link rel="stylesheet" href="style.css">
 
@@ -28,40 +29,80 @@
 
         <nav>
 
-            <a href="#inicio">Início</a>
+            <a href="#inicio" id="navHome">Início</a>
 
-            <a href="#vantagens">Vantagens</a>
+            <a href="#vantagens" id="navAdvantages">
+                Vantagens
+            </a>
 
-            <a href="#tecnologia">Tecnologia</a>
+            <a href="#tecnologia" id="navTechnology">
+                Tecnologia
+            </a>
 
-            <a href="#impactos">Impactos</a>
+            <a href="#impactos" id="navImpacts">
+                Impactos
+            </a>
 
-            <a href="#jogo">Jogo</a>
+            <a href="#jogo" id="navGame">
+                Jogo
+            </a>
 
         </nav>
 
+        <div class="controls">
+
+            <select id="languageSelector" title="Idioma">
+
+                <option value="pt">
+                    🇧🇷 Português
+                </option>
+
+                <option value="en">
+                    🇺🇸 English
+                </option>
+
+                <option value="es">
+                    🇪🇸 Español
+                </option>
+
+            </select>
+
+            <button id="themeToggle" title="Tema">
+                🌙
+            </button>
+
+        </div>
+
     </header>
+
+    <!-- HERO -->
 
     <section class="hero" id="inicio">
 
         <div class="hero-left">
 
-            <p class="mini-title">
+            <p class="mini-title" id="heroMiniTitle">
                 TECNOLOGIA AGRÍCOLA
             </p>
 
-            <h1>
+            <h1 id="heroTitle">
                 Uso de <span>Drones</span> na Agricultura
             </h1>
 
-            <p class="hero-text">
+            <p class="hero-text" id="heroText">
+
                 Os drones revolucionaram o agronegócio moderno,
                 trazendo monitoramento inteligente, redução de custos
                 e maior eficiência na produção agrícola.
+
             </p>
 
-            <a href="#vantagens" class="btn">
+            <a href="#vantagens"
+               class="btn"
+               id="exploreBtn">
+
                 Explorar Tema
+
             </a>
 
         </div>
@@ -82,273 +123,434 @@
 
     <!-- VANTAGENS -->
 
-    <section class="section" id="vantagens">
+<section class="section" id="vantagens">
 
-        <div class="section-header">
-            <p>BENEFÍCIOS</p>
-            <h2>Vantagens dos Drones</h2>
-        </div>
+    <div class="section-header">
 
-        <div class="carousel">
+        <p id="benefitsLabel">
+            BENEFÍCIOS
+        </p>
 
-            <button class="prev">&#10094;</button>
+        <h2 id="benefitsTitle">
+            Vantagens dos Drones
+        </h2>
 
-            <div class="carousel-track">
+    </div>
 
-                <div class="box active">
+    <div class="carousel">
 
-                    <h3> Monitoramento Inteligente</h3>
+        <button class="prev">&#10094;</button>
 
-                    <p>
-                        Os drones permitem acompanhar grandes áreas agrícolas
-                        em poucos minutos, gerando imagens detalhadas e dados
-                        importantes para a tomada de decisões.
-                    </p>
+        <div class="carousel-track">
 
-                    <ul>
-                        <li>Identificação de falhas na plantação</li>
-                        <li>Mapeamento de áreas afetadas por pragas</li>
-                        <li>Monitoramento em tempo real</li>
-                        <li>Redução de inspeções manuais</li>
-                    </ul>
+            <!-- CARD 1 -->
 
-                </div>
+            <div class="box active">
 
-                <div class="box">
+                <h3 id="adv1Title">
+                    Monitoramento Inteligente
+                </h3>
 
-                    <h3> Economia de Recursos</h3>
+                <p id="adv1Text">
 
-                    <p>
-                        A utilização de drones reduz custos operacionais e
-                        melhora a eficiência do trabalho agrícola.
-                    </p>
+                    Os drones permitem acompanhar grandes áreas agrícolas
+                    em poucos minutos, gerando imagens detalhadas e dados
+                    importantes para a tomada de decisões.
 
-                    <ul>
-                        <li>Menor consumo de combustível</li>
-                        <li>Redução de mão de obra</li>
-                        <li>Menos desperdício de produtos</li>
-                        <li>Maior retorno financeiro</li>
-                    </ul>
+                </p>
 
-                </div>
+                <ul>
 
-                <div class="box">
+                    <li id="adv1Li1">
+                        Identificação de falhas na plantação
+                    </li>
 
-                    <h3> Aplicação de Precisão</h3>
+                    <li id="adv1Li2">
+                        Mapeamento de áreas afetadas por pragas
+                    </li>
 
-                    <p>
-                        Os drones conseguem aplicar fertilizantes e defensivos
-                        apenas onde existe necessidade.
-                    </p>
+                    <li id="adv1Li3">
+                        Monitoramento em tempo real
+                    </li>
 
-                    <ul>
-                        <li>Maior precisão operacional</li>
-                        <li>Menor impacto ambiental</li>
-                        <li>Aplicação localizada</li>
-                        <li>Maior eficiência produtiva</li>
-                    </ul>
+                    <li id="adv1Li4">
+                        Redução de inspeções manuais
+                    </li>
 
-                </div>
+                </ul>
 
             </div>
 
-            <button class="next">&#10095;</button>
+            <!-- CARD 2 -->
+
+            <div class="box">
+
+                <h3 id="adv2Title">
+                    Economia de Recursos
+                </h3>
+
+                <p id="adv2Text">
+
+                    A utilização de drones reduz custos operacionais e
+                    melhora a eficiência do trabalho agrícola.
+
+                </p>
+
+                <ul>
+
+                    <li id="adv2Li1">
+                        Menor consumo de combustível
+                    </li>
+
+                    <li id="adv2Li2">
+                        Redução de mão de obra
+                    </li>
+
+                    <li id="adv2Li3">
+                        Menos desperdício de produtos
+                    </li>
+
+                    <li id="adv2Li4">
+                        Maior retorno financeiro
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="box">
+
+                <h3 id="adv3Title">
+                    Aplicação de Precisão
+                </h3>
+
+                <p id="adv3Text">
+
+                    Os drones conseguem aplicar fertilizantes e defensivos
+                    apenas onde existe necessidade.
+
+                </p>
+
+                <ul>
+
+                    <li id="adv3Li1">
+                        Maior precisão operacional
+                    </li>
+
+                    <li id="adv3Li2">
+                        Menor impacto ambiental
+                    </li>
+
+                    <li id="adv3Li3">
+                        Aplicação localizada
+                    </li>
+
+                    <li id="adv3Li4">
+                        Maior eficiência produtiva
+                    </li>
+
+                </ul>
+
+            </div>
 
         </div>
 
+        <button class="next">&#10095;</button>
 
-        </section>
+    </div>
+
+</section>
 
 
     <!-- TECNOLOGIA -->
 
-    <section class="technology" id="tecnologia">
+<section class="technology" id="tecnologia">
 
-        <div class="tech-image">
+    <div class="tech-image">
 
-            <img
-                src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200&auto=format&fit=crop"
-                alt="Tecnologia agrícola">
+        <img
+            src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200&auto=format&fit=crop"
+            alt="Tecnologia agrícola">
 
-        </div>
+    </div>
 
-        <div class="tech-content">
+    <div class="tech-content">
 
-            <p class="mini-title">
-                INOVAÇÃO
-            </p>
+        <p class="mini-title" id="techLabel">
+            INOVAÇÃO
+        </p>
 
-            <h2>
-                Agricultura Inteligente
-            </h2>
+        <h2 id="techTitle">
+            Agricultura Inteligente
+        </h2>
 
-            <p>
-                A integração de drones com inteligência artificial
-                permite mapas detalhados das plantações,
-                análise do solo e identificação de doenças.
-            </p>
+        <p id="techText1">
 
-            <p>
-                Sensores térmicos e câmeras especiais ajudam
-                produtores a tomarem decisões mais rápidas
-                e eficientes.
-            </p>
+            A integração de drones com inteligência artificial
+            permite mapas detalhados das plantações,
+            análise do solo e identificação de doenças.
 
-        </div>
+        </p>
 
-    </section>
+        <p id="techText2">
+
+            Sensores térmicos e câmeras especiais ajudam
+            produtores a tomarem decisões mais rápidas
+            e eficientes.
+
+        </p>
+
+    </div>
+
+</section>
 
     <!-- IMPACTOS -->
 
-    <section class="section" id="impactos">
+<section class="section" id="impactos">
 
-        <div class="section-header">
-            <p>SUSTENTABILIDADE</p>
-            <h2>Impactos Positivos</h2>
-        </div>
+    <div class="section-header">
 
-        <div class="carousel">
+        <p id="impactLabel">
+            SUSTENTABILIDADE
+        </p>
 
-            <button class="prev">&#10094;</button>
+        <h2 id="impactTitle">
+            Impactos Positivos
+        </h2>
 
-            <div class="carousel-track">
+    </div>
 
-                <div class="box active">
+    <div class="carousel">
 
-                    <h3> Menos Desperdício</h3>
+        <button class="prev">&#10094;</button>
 
-                    <p>
-                        O uso de drones reduz significativamente o desperdício
-                        de água, fertilizantes e defensivos agrícolas.
-                    </p>
+        <div class="carousel-track">
 
-                    <ul>
-                        <li>Uso racional de recursos</li>
-                        <li>Menor contaminação do solo</li>
-                        <li>Redução de perdas financeiras</li>
-                        <li>Maior sustentabilidade</li>
-                    </ul>
+            <!-- CARD 1 -->
 
-                </div>
+            <div class="box active">
 
-                <div class="box">
+                <h3 id="impact1Title">
+                    Menos Desperdício
+                </h3>
 
-                    <h3> Aumento da Produção</h3>
+                <p id="impact1Text">
 
-                    <p>
-                        A análise rápida das lavouras permite corrigir problemas
-                        antes que eles afetem a produtividade.
-                    </p>
+                    O uso de drones reduz significativamente o desperdício
+                    de água, fertilizantes e defensivos agrícolas.
 
-                    <ul>
-                        <li>Maior rendimento por hectare</li>
-                        <li>Redução de falhas produtivas</li>
-                        <li>Melhor gestão agrícola</li>
-                        <li>Resultados mais consistentes</li>
-                    </ul>
+                </p>
 
-                </div>
+                <ul>
 
-                <div class="box">
+                    <li id="impact1Li1">
+                        Uso racional de recursos
+                    </li>
 
-                    <h3> Preservação Ambiental</h3>
+                    <li id="impact1Li2">
+                        Menor contaminação do solo
+                    </li>
 
-                    <p>
-                        A agricultura de precisão reduz impactos ambientais e
-                        promove práticas mais sustentáveis.
-                    </p>
+                    <li id="impact1Li3">
+                        Redução de perdas financeiras
+                    </li>
 
-                    <ul>
-                        <li>Menor emissão de poluentes</li>
-                        <li>Redução de produtos químicos</li>
-                        <li>Proteção de áreas naturais</li>
-                        <li>Uso consciente do solo</li>
-                    </ul>
+                    <li id="impact1Li4">
+                        Maior sustentabilidade
+                    </li>
 
-                </div>
-
-                <div class="box">
-
-                    <h3> Análise Rápida</h3>
-
-                    <p>
-                        Em poucos minutos é possível analisar áreas que levariam
-                        horas ou dias para serem inspecionadas manualmente.
-                    </p>
-
-                    <ul>
-                        <li>Tomada de decisão rápida</li>
-                        <li>Maior produtividade operacional</li>
-                        <li>Mapeamento detalhado</li>
-                        <li>Resposta imediata a problemas</li>
-                    </ul>
-
-                </div>
+                </ul>
 
             </div>
 
-            <button class="next">&#10095;</button>
+            <!-- CARD 2 -->
+
+            <div class="box">
+
+                <h3 id="impact2Title">
+                    Aumento da Produção
+                </h3>
+
+                <p id="impact2Text">
+
+                    A análise rápida das lavouras permite corrigir problemas
+                    antes que eles afetem a produtividade.
+
+                </p>
+
+                <ul>
+
+                    <li id="impact2Li1">
+                        Maior rendimento por hectare
+                    </li>
+
+                    <li id="impact2Li2">
+                        Redução de falhas produtivas
+                    </li>
+
+                    <li id="impact2Li3">
+                        Melhor gestão agrícola
+                    </li>
+
+                    <li id="impact2Li4">
+                        Resultados mais consistentes
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="box">
+
+                <h3 id="impact3Title">
+                    Preservação Ambiental
+                </h3>
+
+                <p id="impact3Text">
+
+                    A agricultura de precisão reduz impactos ambientais e
+                    promove práticas mais sustentáveis.
+
+                </p>
+
+                <ul>
+
+                    <li id="impact3Li1">
+                        Menor emissão de poluentes
+                    </li>
+
+                    <li id="impact3Li2">
+                        Redução de produtos químicos
+                    </li>
+
+                    <li id="impact3Li3">
+                        Proteção de áreas naturais
+                    </li>
+
+                    <li id="impact3Li4">
+                        Uso consciente do solo
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- CARD 4 -->
+
+            <div class="box">
+
+                <h3 id="impact4Title">
+                    Análise Rápida
+                </h3>
+
+                <p id="impact4Text">
+
+                    Em poucos minutos é possível analisar áreas que levariam
+                    horas ou dias para serem inspecionadas manualmente.
+
+                </p>
+
+                <ul>
+
+                    <li id="impact4Li1">
+                        Tomada de decisão rápida
+                    </li>
+
+                    <li id="impact4Li2">
+                        Maior produtividade operacional
+                    </li>
+
+                    <li id="impact4Li3">
+                        Mapeamento detalhado
+                    </li>
+
+                    <li id="impact4Li4">
+                        Resposta imediata a problemas
+                    </li>
+
+                </ul>
+
+            </div>
 
         </div>
 
-    </section>
+        <button class="next">&#10095;</button>
+
+    </div>
+
+</section>
 
 
     <!-- JOGO -->
 
-    <section class="section" id="jogo">
+<section class="section" id="jogo">
 
-        <div class="section-header">
+    <div class="section-header">
 
-            <p>MINI GAME</p>
+        <p id="gameLabel">
+            MINI GAME
+        </p>
 
-            <h2>Drone Farm Game</h2>
+        <h2 id="gameTitle">
+            Drone Farm Game
+        </h2>
+
+    </div>
+
+    <div class="game-section">
+
+        <div class="game-text">
+
+            <p id="gameText1">
+
+                Controle um drone agrícola em missões dentro do campo.
+                Abasteça o tanque, pulverize toda a área,
+                colete frutas e entregue a carga no caminhão.
+
+            </p>
+
+            <p id="gameText2">
+
+                O jogo simula algumas funções reais dos drones
+                utilizados na agricultura moderna, mostrando como
+                a tecnologia pode ajudar produtores rurais.
+
+            </p>
+
+            <a href="jogo.html"
+               class="play-btn"
+               id="playBtn">
+
+                Jogar Agora
+
+            </a>
 
         </div>
 
-        <div class="game-section">
+        <div class="game-preview">
 
-            <div class="game-text">
-
-                <p>
-                    Controle um drone agrícola em missões dentro do campo.
-                    Abasteça o tanque, pulverize toda a área,
-                    colete frutas e entregue a carga no caminhão.
-                </p>
-
-                <p>
-                    O jogo simula algumas funções reais dos drones
-                    utilizados na agricultura moderna, mostrando como
-                    a tecnologia pode ajudar produtores rurais.
-                </p>
-
-                <a href="jogo.html" class="play-btn">
-                    Jogar Agora
-                </a>
-
-            </div>
-
-            <div class="game-preview">
-
-                <img
-                    src="capa_jogo.png"
-                    alt="Drone Farm Game">
-
-            </div>
+            <img
+                src="img/capa_jogo.png"
+                alt="Drone Farm Game">
 
         </div>
 
-    </section>
+    </div>
 
-    <footer>
+</section>
 
-        © 2026 - Uso de Drones na Agricultura
+<footer id="footerText">
 
-    </footer>
+    © 2026 - Uso de Drones na Agricultura - Rafael Antonio Zamoner
 
-    <script src="script.js"></script>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
 ```

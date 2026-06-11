@@ -492,3 +492,252 @@ footer{
     color:#c2d4e2;
     font-size:1rem;
 }
+
+.controls{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.controls select{
+
+    height:42px;
+
+    padding:0 14px;
+
+    border-radius:10px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    background:rgba(255,255,255,.06);
+
+    color:white;
+
+    font-size:.95rem;
+
+    cursor:pointer;
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+.controls select:hover{
+
+    border-color:#00ffaa;
+
+}
+
+.controls select option{
+
+    background:#08111f;
+
+    color:white;
+
+}
+
+.controls button{
+    width:42px;
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #00ffaa,
+        #00aaff
+    );
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+}
+
+.controls button:hover{
+    transform:rotate(20deg) scale(1.08);
+
+    box-shadow:0 0 20px rgba(0,255,170,.35);
+}
+
+body{
+    transition:0.3s;
+}
+
+/* ========================= */
+/* TEMA CLARO */
+/* ========================= */
+
+body{
+    transition:background .4s,color .4s;
+}
+
+.light-theme{
+    background:#eef5f1;
+    color:#1f2937;
+}
+
+/* Fundo */
+
+.light-theme .bg-glow{
+    background:
+    radial-gradient(circle at top left,
+    rgba(34,197,94,.18),
+    transparent 35%),
+
+    radial-gradient(circle at bottom right,
+    rgba(59,130,246,.15),
+    transparent 35%),
+
+    #eef5f1;
+}
+
+/* Header */
+
+.light-theme header{
+    background:rgba(255,255,255,.85);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.light-theme .logo{
+    color:#15803d;
+}
+
+.light-theme nav a{
+    color:#374151;
+}
+
+.light-theme nav a:hover{
+    color:#16a34a;
+}
+
+/* Títulos */
+
+.light-theme .mini-title,
+.light-theme .section-header p,
+.light-theme .box h3{
+    color:#16a34a;
+}
+
+.light-theme .hero h1 span{
+    color:#2563eb;
+}
+
+/* Textos */
+
+.light-theme .hero-text,
+.light-theme .tech-content p,
+.light-theme .game-text p,
+.light-theme .box p,
+.light-theme .box li,
+.light-theme footer{
+    color:#4b5563;
+}
+
+/* Cards */
+
+.light-theme .box{
+    background:#ffffff;
+    border:1px solid #dbe4dd;
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+}
+
+.light-theme .box:hover{
+    border-color:#22c55e;
+    box-shadow:0 15px 35px rgba(34,197,94,.15);
+}
+
+/* Imagens */
+
+.light-theme .drone-card,
+.light-theme .game-preview{
+    border:1px solid rgba(0,0,0,.08);
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* Botões */
+
+.light-theme .btn,
+.light-theme .play-btn{
+    background:linear-gradient(
+        90deg,
+        #16a34a,
+        #22c55e
+    );
+}
+
+.light-theme .btn:hover,
+.light-theme .play-btn:hover{
+    box-shadow:0 0 25px rgba(34,197,94,.35);
+}
+
+/* Setas */
+
+.light-theme .prev,
+.light-theme .next{
+    background:linear-gradient(
+        90deg,
+        #16a34a,
+        #22c55e
+    );
+}
+
+/* Rodapé */
+
+.light-theme footer{
+    border-top:1px solid rgba(0,0,0,.08);
+}
+
+/* ========================= */
+/* TEMA CLARO - CONTROLES */
+/* ========================= */
+
+.light-theme .controls select{
+
+    background:#ffffff;
+
+    color:#222;
+
+    border:1px solid #d6dce3;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.light-theme .controls select:hover{
+
+    border-color:#00a86b;
+
+}
+
+.light-theme .controls button{
+
+    background:#ffffff;
+
+    color:#222;
+
+    border:1px solid #d6dce3;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.light-theme .controls button:hover{
+
+    border-color:#00a86b;
+
+}
+
+.light-theme .controls select option{
+
+    background:white;
+
+    color:#222;
+
+}
